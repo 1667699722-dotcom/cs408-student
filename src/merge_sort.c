@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+int count;//逆序对个数
 void Merge(int low,int mid,int high,int A[],int B[])
 {
     int i,j,k;
@@ -19,6 +20,7 @@ void Merge(int low,int mid,int high,int A[],int B[])
         else
         {
             A[k++]=B[j++];
+            count+=mid-i+1;
         }
     }
     while(i<=mid)
@@ -44,6 +46,7 @@ void Mergesort(int low,int high,int A[],int B[])
 
 int main()
 {
+    count=0;
     int A[] = {0,5,2,4,6,1,3,7,8}; 
     int n = sizeof(A)/sizeof(A[0]) - 1; 
     int B[n+1];
@@ -53,5 +56,6 @@ int main()
         printf("%d ",A[i]);
     }
     printf("\n");
+    printf("逆序对个数为：%d\n",count);
     return 0;
 }
