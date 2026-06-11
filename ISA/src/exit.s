@@ -6,6 +6,7 @@ exit:
     movz x16, #0x1
     movk x16, #0x200, lsl #16
     svc #0x80
+    ret
 sys_write:
     movz x16, #0x4
     movk x16, #0x200, lsl #16

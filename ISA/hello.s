@@ -2,13 +2,16 @@
 .data  ;数据区
 .align 4  ;
 
-
-
 .global heap
 .global heap_end
+.extern hello_msg
+.extern hello_len
+
 heap:                  ;堆内存的开始位置
     .space HEAP_SIZE   ;开辟一块长度为HEAP_SIZE的内存空间
 heap_end:              ;堆内存的结束位置
+.global input_buf
+input_buf:.space 256
 
 .text 
 .global _main
@@ -20,12 +23,16 @@ heap_end:              ;堆内存的结束位置
 .extern sys_read
 .extern test_write
 .extern test_memory 
+.extern test_read
+.extern test_write_read
 
 _main:
     bl memory_init 
     mov x19,#0
-loop:
 
+loop:
+    bl test_read
+    bl test_write_read
     bl test_write
 
     add x19, x19, #1
