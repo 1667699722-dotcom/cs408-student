@@ -44,6 +44,9 @@ loop:
     mov x20,#0
     bl get_string_ptr_len_spaces 
     ;x0第一个空格位置 x1返回第二个空格位置 x2返回地址 x3返回长度
+
+
+    
     ;bl test_write_memory
     ;bl test_write_read
     ;bl test_write
