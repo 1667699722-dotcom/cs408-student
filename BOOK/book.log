@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.1.10)  17 JUN 2026 15:50
+This is XeTeX, Version 3.141592653-2.6-0.999997 (TeX Live 2025) (preloaded format=xelatex 2026.1.10)  18 JUN 2026 18:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -764,14 +764,16 @@ Package fontspec Info:
 
 LaTeX Font Info:    Font shape `TU/STSong(0)/m/sl' in size <12> not available
 (Font)              Font shape `TU/STSong(0)/m/it' tried instead on input line 
-107.
-[3])
+100.
+[3]
+
+[4])
 \tf@toc=\write4
 \openout4 = `book.toc'.
 
 
 
-[4] (./intro/main.tex
+[5] (./intro/main.tex
 Chapter 1.
 
 
@@ -822,35 +824,52 @@ LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
 
 [17]
 
-[18]) (./isa/sections/07_build.tex
-(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
-(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2024/09/23 1.10c listings language file
-)
+[18]
 
 [19]
 
-[20])) (./qemu/main.tex
+[20]
 
-[21]
+[21]) (./isa/sections/07_build.tex
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2024/09/23 1.10c listings language file
+)
+
+[22]) (./isa/sections/08_instr.tex
+
+[23]
+
+[24]
+
+[25]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+[26]
+
+[27])) (./qemu/main.tex
+
+[28]
 Chapter 3.
 (./qemu/sections/01_start.tex
 
-[22
+[29
 
 ])
 
-[23] (./qemu/sections/02_run.tex
+[30] (./qemu/sections/02_run.tex
 
-[24]) (./qemu/sections/03_uart.tex
+[31]) (./qemu/sections/03_uart.tex
 
-[25]
+[32]
 
-[26])) (./chip/main.tex
+[33])) (./chip/main.tex
 
-[27]
+[34]
 Chapter 4.
 (./chip/sections/01_concepts.tex
 (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
@@ -863,37 +882,37 @@ File: lstlang2.sty 2024/09/23 1.10c listings language file
 File: lstlang3.sty 2024/09/23 1.10c listings language file
 )
 
-[28
+[35
 
 ]) (./chip/sections/02_adder.tex
 
-[29]
-
-[30]) (./chip/sections/03_uart_tx.tex
-
-[31]
-
-[32]
-
-[33]) (./chip/sections/04_uart_rx.tex
-
-[34]
-
-[35]
-
 [36]
 
-[37]) (./chip/sections/05_fpga.tex
+[37]) (./chip/sections/03_uart_tx.tex
 
 [38]
 
-[39])) (./algo/main.tex
+[39]
 
-[40]
+[40]) (./chip/sections/04_uart_rx.tex
+
+[41]
+
+[42]
+
+[43]
+
+[44]) (./chip/sections/05_fpga.tex
+
+[45]
+
+[46])) (./algo/main.tex
+
+[47]
 Chapter 5.
 (./algo/sections/02_insertion_sort.tex
 
-[41
+[48
 
 ] (/usr/local/texlive/2025/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2024/09/23 1.10c listings language file
@@ -903,63 +922,63 @@ File: lstmisc.sty 2024/09/23 1.10c (Carsten Heinz)
 )
 (../algo/src/sort/inserton_sort.c)
 
-[42]) (./algo/sections/03_merge_sort.tex
+[49]) (./algo/sections/03_merge_sort.tex
 
-[43] (../algo/src/sort/merge_sort.c)
+[50] (../algo/src/sort/merge_sort.c)
 
-[44] (../algo/src/sort/merge_sort.c)) (./algo/sections/07_heapsort.tex
+[51] (../algo/src/sort/merge_sort.c)) (./algo/sections/07_heapsort.tex
 
-[45] (../algo/src/sort/heap_sort.c)
+[52] (../algo/src/sort/heap_sort.c)
 
-[46] (../algo/src/sort/heap_sort.c) (../algo/src/sort/heap_sort.c
+[53] (../algo/src/sort/heap_sort.c) (../algo/src/sort/heap_sort.c
 
-[47]) (../algo/src/sort/heap_sort.c) (../algo/src/sort/heap_sort.c)
+[54]) (../algo/src/sort/heap_sort.c) (../algo/src/sort/heap_sort.c)
 
-[48]) (./algo/sections/04_max_subarray.tex (../algo/src/findmaximumsubarray/1.c
+[55]) (./algo/sections/04_max_subarray.tex (../algo/src/findmaximumsubarray/1.c
 
 
-[49])
+[56])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 
-[50] (../algo/src/findmaximumsubarray/2.c
+[57] (../algo/src/findmaximumsubarray/2.c
 
-[51]) (../algo/src/findmaximumsubarray/2.c
+[58]) (../algo/src/findmaximumsubarray/2.c
 
-[52]) (../algo/src/findmaximumsubarray/2.c)) (./algo/sections/05_matrix.tex
+[59]) (../algo/src/findmaximumsubarray/2.c)) (./algo/sections/05_matrix.tex
 
-[53] (../algo/src/matrix/1.c
+[60] (../algo/src/matrix/1.c
 
-[54]) (../algo/src/matrix/1.c)
+[61]) (../algo/src/matrix/1.c)
 
-[55] (../algo/src/matrix/1.c
+[62] (../algo/src/matrix/1.c
 
-[56]) (../algo/src/matrix/1.c
+[63]) (../algo/src/matrix/1.c
 
-[57])
+[64])
 
-[58] (../algo/src/matrix/1.c)
+[65] (../algo/src/matrix/1.c)
 
-[59]) (./algo/sections/06_relation.tex
+[66]) (./algo/sections/06_relation.tex
 
-[60]))
+[67]))
 
-[61] (./book.aux)
+[68] (./book.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2022/08/05>
  ***********
 Package rerunfilecheck Info: File `book.out' has not changed.
-(rerunfilecheck)             Checksum: 7C99F077CB3EA1E654926D01F4892932;16076.
+(rerunfilecheck)             Checksum: 2ADB0FB650B2D9A07E4BB4E93D7872D9;18063.
  ) 
 Here is how much of TeX's memory you used:
- 19569 strings out of 473832
- 412812 string characters out of 5729481
- 1497519 words of memory out of 5000000
- 42210 multiletter control sequences out of 15000+600000
+ 19645 strings out of 473832
+ 415847 string characters out of 5729481
+ 1496610 words of memory out of 5000000
+ 42283 multiletter control sequences out of 15000+600000
  567798 words of font info for 110 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,9n,114p,343b,2338s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on book.pdf (65 pages).
+Output written on book.pdf (73 pages).
