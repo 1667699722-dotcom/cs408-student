@@ -99,12 +99,16 @@ extract_done3:
     strb wzr,[x27,x28]
     str x27,[x24,#16]  ; 存第二个数字指针，把原来的 str x21 覆盖掉，或者你自己选位置
 
+    ; 正确加载 part2 的字符串地址
+    ldr x0, [x24, #8]
+    bl atoi
+    mov x27,x0
+    ldr x0, [x24, #16]
+    bl atoi
+    add x27,x27,x0
+    mov x0,x27
+     
     
-
-
-
-
-
     str x27,[x24,#24]
 
 
@@ -139,8 +143,36 @@ get_instr_addrs_done:
     
 
 
-;atoi：
-    ;stp x29,x30,[sp,#-32]!
-    ;stp x19,x20,[sp,#16]
+atoi:
+    stp x29,x30,[sp,#-32]!
+    stp x19,x20,[sp,#16]
+    mov x19,x0
+    mov x20,#0
+atoi_check_prefix:
+    ldrb w0,[x19]
+    cmp w0,#'#'
+    b.ne atoi_loop_start
+    add x19,x19,#1
+atoi_loop_start:
+    mov x0,#0
+atoi_loop:
+    ldrb w0,[x19],#1
+    cmp w0,#'0'
+    b.lt atoi_done
+    cmp w0,#'9'
+    b.gt atoi_done
+    
+    sub w0,w0,#'0'
+    mov x1,x20
+    lsl x20,x20,#3
+    add x20,x20,x1,lsl #1
+    add x20,x20,x0
+    b atoi_loop
+atoi_done:
+    mov x0,x20
+    ldp x19,x20,[sp,#16]
+    ldp x29,x30,[sp],#32
+    ret
+    
 
 ;execute_op：
